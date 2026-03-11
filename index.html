@@ -1,88 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Poke API</title>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/script.js" defer type="module"></script>
-  </head>
-  <body>
-    <main>
-      <article>
-        <figure>
-          <picture>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Image Bulbizarre" />
-          </picture>
-          <figcaption>
-            <span class="types">Plante</span>
-            <h2>Bulbizarre</h2>
-            <ol>
-              <li>Points de vie : 39</li>
-              <li>Attaque : 52</li>
-              <li>Défense : 43</li>
-              <li>Attaque spécial : 60</li>
-              <li>Vitesse : 65</li>
-            </ol>
-          </figcaption>
-        </figure>
-      </article>
-      <article>
-        <figure>
-          <picture>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Image Bulbizarre" />
-          </picture>
-          <figcaption>
-            <span class="types">Plante</span>
-            <h2>Bulbizarre</h2>
-            <ol>
-              <li>Points de vie : 39</li>
-              <li>Attaque : 52</li>
-              <li>Défense : 43</li>
-              <li>Attaque spécial : 60</li>
-              <li>Vitesse : 65</li>
-            </ol>
-          </figcaption>
-        </figure>
-      </article>
-      <article>
-        <figure>
-          <picture>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Image Bulbizarre" />
-          </picture>
-          <figcaption>
-            <span class="types">Plante</span>
-            <h2>Bulbizarre</h2>
-            <ol>
-              <li>Points de vie : 39</li>
-              <li>Attaque : 52</li>
-              <li>Défense : 43</li>
-              <li>Attaque spécial : 60</li>
-              <li>Vitesse : 65</li>
-            </ol>
-          </figcaption>
-        </figure>
-      </article>
-      <article>
-        <figure>
-          <picture>
-            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png" alt="Image Bulbizarre" />
-          </picture>
-          <figcaption>
-            <span class="types">Plante</span>
-            <h2>Bulbizarre</h2>
-            <ol>
-              <li>Points de vie : 39</li>
-              <li>Attaque : 52</li>
-              <li>Défense : 43</li>
-              <li>Attaque spécial : 60</li>
-              <li>Vitesse : 65</li>
-            </ol>
-          </figcaption>
-        </figure>
-      </article>
-    </main>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Poke API</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="./js/script.js" defer type="module"></script>
+	</head>
+	<body>
+		<header>
+			<h2>Sélectionner la génération de Pokémon :</h2>
+			<section id="filtre">
+				<div class="select">
+					<select>
+						<option value="1">Génération 1</option>
+						<option value="2">Génération 2</option>
+						<option value="3">Génération 3</option>
+						<option value="4">Génération 4</option>
+						<option value="5">Génération 5</option>
+						<option value="6">Génération 6</option>
+						<option value="7">Génération 7</option>
+						<option value="8">Génération 8</option>
+					</select>
+				</div>
+				<fieldset>
+					<legend>Choisissez le type de votre pokemon:</legend>
+					<div>
+						<input type="checkbox" id="fire" name="fire" />
+						<label for="fire">Fire</label>
+					</div>
+
+					<div>
+						<input type="checkbox" id="water" name="water" />
+						<label for="water">Water</label>
+					</div>
+					<div>
+						<input type="checkbox" id="electric" name="electric" />
+						<label for="electric">Electric</label>
+					</div>
+
+					<div>
+						<input type="checkbox" id="flying" name="flying" />
+						<label for="flying">Flying</label>
+					</div>
+					<div>
+						<input type="checkbox" id="grass" name="grass" />
+						<label for="grass">Grass</label>
+					</div>
+
+					<div>
+						<input type="checkbox" id="dragon" name="dragon" />
+						<label for="dragon">Dragon</label>
+					</div>
+					<div>
+						<input type="checkbox" id="psychic" name="psychic" />
+						<label for="psychic">Psychic</label>
+					</div>
+
+					<div>
+						<input type="checkbox" id="rock" name="rock" />
+						<label for="rock">Rock</label>
+					</div>
+					<div>
+						<input type="checkbox" id="ice" name="ice" />
+						<label for="ice">Ice</label>
+					</div>
+
+					<div>
+						<input type="checkbox" id="bug" name="bug" />
+						<label for="bug">Bug</label>
+					</div>
+					<div>
+						<input type="checkbox" id="normal" name="normal" />
+						<label for="normal">Normal</label>
+					</div>
+					<div>
+						<input type="checkbox" id="poison" name="poison" />
+						<label for="poison">Poison</label>
+					</div>
+
+					<div>
+						<input type="checkbox" id="ground" name="ground" />
+						<label for="ground">Ground</label>
+					</div>
+					<div>
+						<input type="checkbox" id="fairy" name="fairy" />
+						<label for="fairy">Fairy</label>
+					</div>
+
+					<div>
+						<input type="checkbox" id="ghost" name="ghost" />
+						<label for="ghost">Ghost</label>
+					</div>
+					<div>
+						<input type="checkbox" id="fighting" name="fighting" />
+						<label for="fighting">Fighting</label>
+					</div>
+				</fieldset>
+			</section>
+		</header>
+		<main></main>
+	</body>
 </html>
